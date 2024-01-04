@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Work;
-    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+  font-family: Work;
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
 
 * {
@@ -20,75 +20,76 @@ body {
 }
 
 .accordion {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    width: 35vw;
-    margin: 200px auto 0;
-    padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 80%;
+  max-width: 405px;
+  margin: 200px auto 0;
+  padding: 20px;
 }
 
 .accordion-item-list {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column;
 }
 
 .question {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    /* font-size: 0.75rem; */
-    font-weight: 800;
-    color: hsl(292, 42%, 14%);
-    padding: 10px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 0.75rem; */
+  font-weight: 800;
+  color: hsl(292, 42%, 14%);
+  padding: 10px 0;
 }
 
 .question::after {
-    content: url(assets/images/icon-plus.svg);
+  content: url(assets/images/icon-plus.svg);
 }
 
 .question.open::after {
-    content: url(assets/images/icon-minus.svg);
+  content: url(assets/images/icon-minus.svg);
 }
 
 .question:hover {
-    color: #AD28EB;
-    cursor: pointer;
+  color: #ad28eb;
+  cursor: pointer;
 }
 
 .answer {
-    padding: 10px 0;
-    color: hsl(292, 16%, 49%);
-    display: none;
+  padding: 10px 0;
+  color: hsl(292, 16%, 49%);
+  display: none;
 }
 
 .accordion-title {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: left;
-    color: hsl(292, 42%, 14%);
-    font-size: 2.75rem;
-    gap: 10px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: left;
+  color: hsl(292, 42%, 14%);
+  font-size: 2.75rem;
+  gap: 10px;
 }
 
 .accordion-title span img {
-    height: 2rem;
+  height: 2rem;
 }
 
 .accordion-item {
-    list-style: none;
-    border-bottom: 1px solid hsl(275, 100%, 97%);
+  list-style: none;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
 }
 
 .accordion-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .active {
-    display: block;
+  display: block;
 }
 
 .passive {
-    display: none;
+  display: none;
 }
