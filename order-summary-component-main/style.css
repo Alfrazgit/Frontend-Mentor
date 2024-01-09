@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  /* ### Primary */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg) top
+    no-repeat;
+}
+
+.container {
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: calc(375px);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 2rem 1rem -1rem var(--Desaturated-blue);
+}
+
+.banner {
+  margin-bottom: 1rem;
+}
+
+.banner img {
+  height: 200px;
+  width: 100%;
+}
+
+.main-header {
+  font-size: 1.5rem;
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+.description {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  width: 80%;
+  margin: 0 3rem;
+}
+
+.plan-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 79%;
+  margin: 1rem auto;
+  background-color: var(--Very-pale-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.plan-section a {
+  color: var(--Bright-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plan-section a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 0.5);
+}
+
+.plan-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plan-div-inner {
+  margin-left: 1rem;
+}
+
+.plan-div:nth-of-type(1)::before {
+  content: url(images/icon-music.svg);
+}
+
+.cost {
+  color: var(--Desaturated-blue);
+}
+
+.plan {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  margin: 2px 0;
+}
+
+img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+button {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  margin: 0 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem 0 var(--Pale-blue);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.5);
+}
+
+.cancel {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.cancel:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  }
